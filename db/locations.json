@@ -1,0 +1,53 @@
+{
+"locationsData": [
+
+{
+"Location Image": "imgURL",
+"Name": "Graze",
+"Location Address": "mainstreet",
+"Shoot Time":"Morning"
+},
+{
+"Location Image": "imgURL",
+"Name": "Barrys Bootcamp",
+"Location Address": "123 Main Street",
+"Shoot Time":"Morning"
+},
+{
+"Location Image": "imgURL",
+"Name": "5th and Taylor",
+"Location Address": "333 Commerce Street, Nashville, TN, 32",
+"Shoot Time": "Evening"
+},
+{
+"Location Image" : "imgURL",
+"Name": "Virago",
+"Location Address": "1 Terminal Dr #325, Nashville, TN 37214",
+"Shoot Time": "Evening"
+},
+{
+"Location Image": "imgURL",
+"Name": "Otaku",
+"Location Address": "1 Terminal Dr #325, Nashville, TN 37214",
+"Shoot Time": "Afternoon"
+},
+{
+"Location Image": "imgURL",
+"Name": "Bastian",
+"Location Address": "1 Terminal Dr #325, Nashville, TN 37214",
+"Shoot Time": "After Dark"
+},
+{
+"Location Image": "imgURL",
+"Name": "Yazoo",
+"Location Address": "1 Terminal Dr #325, Nashville, TN 37214",
+"Shoot Time": "Afternoon"
+},
+{
+"Location Image": "imgURL",
+"Name": "Old Glory",
+"Location Address": "1 Terminal Dr #325, Nashville, TN 37214",
+"Shoot Time":"After Dark"
+}
+]
+}
