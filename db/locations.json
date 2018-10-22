@@ -1,53 +1,53 @@
 {
-"locationsData": [
+"locations": [
 
 {
-"Location Image": "imgURL",
+"locationImage": "imgURL",
 "Name": "Graze",
-"Location Address": "mainstreet",
-"Shoot Time":"Morning"
+"locationAddress": "mainstreet",
+"shootTime":"Morning"
 },
 {
-"Location Image": "imgURL",
+"locationImage": "imgURL",
 "Name": "Barrys Bootcamp",
-"Location Address": "123 Main Street",
-"Shoot Time":"Morning"
+"locationAddress": "123 Main Street",
+"shootTime":"Morning"
 },
 {
-"Location Image": "imgURL",
+"locationImage": "imgURL",
 "Name": "5th and Taylor",
-"Location Address": "333 Commerce Street, Nashville, TN, 32",
-"Shoot Time": "Evening"
+"locationAddress": "333 Commerce Street, Nashville, TN, 32",
+"shootTime": "Evening"
 },
 {
-"Location Image" : "imgURL",
+"locationImage" : "imgURL",
 "Name": "Virago",
-"Location Address": "1 Terminal Dr #325, Nashville, TN 37214",
-"Shoot Time": "Evening"
+"locationAddress": "1 Terminal Dr #325, Nashville, TN 37214",
+"shootTime": "Evening"
 },
 {
-"Location Image": "imgURL",
+"locationImage": "imgURL",
 "Name": "Otaku",
-"Location Address": "1 Terminal Dr #325, Nashville, TN 37214",
-"Shoot Time": "Afternoon"
+"locationAddress": "1 Terminal Dr #325, Nashville, TN 37214",
+"shootTime": "Afternoon"
 },
 {
-"Location Image": "imgURL",
+"locationImage": "imgURL",
 "Name": "Bastian",
-"Location Address": "1 Terminal Dr #325, Nashville, TN 37214",
-"Shoot Time": "After Dark"
+"locationAddress": "1 Terminal Dr #325, Nashville, TN 37214",
+"shootTime": "After Dark"
 },
 {
-"Location Image": "imgURL",
+"locationImage": "imgURL",
 "Name": "Yazoo",
-"Location Address": "1 Terminal Dr #325, Nashville, TN 37214",
-"Shoot Time": "Afternoon"
+"locationAddress": "1 Terminal Dr #325, Nashville, TN 37214",
+"shootTime": "Afternoon"
 },
 {
-"Location Image": "imgURL",
+"locationImage": "imgURL",
 "Name": "Old Glory",
-"Location Address": "1 Terminal Dr #325, Nashville, TN 37214",
-"Shoot Time":"After Dark"
+"locationAddress": "1 Terminal Dr #325, Nashville, TN 37214",
+"shootTime":"After Dark"
 }
 ]
 }
