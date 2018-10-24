@@ -1,15 +1,5 @@
 
-let locations = [];
-
-const setLocations = (newArray) => {
-    pets = newArray;
-};
-
-const getLocationz = () => {
-    return locations;
-};
-
-const sortLocationa = (e) => {
+const sortLocations = (e) => {
     const shootTime = e.target.id;
     if (shootTime === 'all') {
         LocationBuilder(locations);
@@ -33,7 +23,7 @@ const locationBuilder = (arrayOfLocation) => {
     let domString = '';
     arrayOfLocation.forEach((location) => {
         domString += `
-        <div class="${location.shooTtime} location card col-md-6 col-md-offset-3"> 
+        <div class="${location.id} location card col-md-6 col-md-offset-3"> 
         <div class="thumbnail">
             <img src="${location.locationImage}" alt="" width="40%">
             <div class="caption">
@@ -49,3 +39,22 @@ const locationBuilder = (arrayOfLocation) => {
     })
 
     }
+
+
+    const initializeBoardView = () => {
+        loadBoards().then((boards) => {
+            writeBoards(boards);
+            bindEvents();
+        }).catch((error) => {
+            console.error(error);
+        })
+    }
+
+    $.get('../db/locations.json')
+    .done((data) => {
+        writeFishes(data.fishes);
+        applySale()
+    })
+    .fail((error) => {
+        console.error({ error });
+    });

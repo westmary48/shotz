@@ -1,3 +1,5 @@
+
+
 const movieStringBuilder = (arrayOfLocation) => {
     let domString = '';
     arrayOfLocation.forEach((movie) => {
