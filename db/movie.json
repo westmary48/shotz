@@ -1,0 +1,74 @@
+{
+    "movies": [
+{
+    "id": "movie1",
+    "name": "Wedding Crashers",
+    "genre": "Comedy",
+    "releaseDate": "10/11/2020",
+    "description": "super exclusive can't tell you",
+    "locations": "location1"
+  },
+
+  {
+    "id": "movie2",
+    "name": "Dazed and Confused",
+    "genre": "Comedy",
+    "releaseDate": "10/17/2020",
+    "description": "super exclusive can't tell you",
+    "locations": "location3"
+  },
+
+
+  {
+    "id": "movie3",
+    "name": "American Pie",
+    "genre": "Comedy",
+    "releaseDate": "10/15/2020",
+    "description": "super exclusive can't tell you",
+    "locations": "location9"
+  },
+
+
+  {
+    "id": "movie4",
+    "name": "American Pie",
+    "genre": "Comedy",
+    "releaseDate": "10/14/2020",
+    "description": "super exclusive can't tell you",
+    "locations":"location3" 
+  },
+
+  {
+    "id": "movie5",
+    "name": "Gone Girl",
+    "genre": "Thriller",
+    "releaseDate": "10/10/2020",
+    "description": "super exclusive can't tell you",
+    "locations": "location9"
+  },
+  {
+    "id": "movie6",
+    "name": "The Devil Wears Prada",
+    "genre": "Drama",
+    "releaseDate": "10/18/2020",
+    "description": "super exclusive can't tell you",
+    "locations":"[location1"
+  },
+  {
+    "id": "movie7",
+    "name": "American Psycho",
+    "genre": "Thriller",
+    "releaseDate": "10/13/2020",
+    "description": "super exclusive can't tell you",
+    "locations": "location3"
+  },
+  {
+    "id": "movie8",
+    "name": "Hocus Pocas",
+    "genre": "Thriller",
+    "releaseDate": "10/16/2020",
+    "description": "super exclusive can't tell you",
+    "locations": "location9"
+  }
+]
+}

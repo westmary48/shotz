@@ -1,0 +1,63 @@
+{
+"locations": [
+
+{
+"id": "location1",
+"imageUrl": "https://www.roadsideamerica.com/attract/images/ks/KSCAWtwine2.jpg",
+"name": "Barrys Bootcamp",
+"address": "719 Wisconsin St, Cawker City, KS 67430",
+"shootTime": "Afternoon"
+},
+{
+"id": "location2",
+"imageUrl": "https://www.roadsideamerica.com/attract/images/ks/KSCAWtwine2.jpg",
+"name": "Aspire Health",
+"address": "719 Wisconsin St, Cawker City, KS 67430",
+"shootTime": "Morning"
+},
+{
+
+"id": "location3",
+"imageUrl": "https://www.roadsideamerica.com/attract/images/ks/KSCAWtwine2.jpg",
+"name": "Fifth and Taylor",
+"address": "719 Wisconsin St, Cawker City, KS 67430",
+"shootTime": "Evening"
+},
+{
+
+"id": "location4",
+"imageUrl": "https://www.roadsideamerica.com/attract/images/ks/KSCAWtwine2.jpg",
+"name": "Yazoo",
+"address": "719 Wisconsin St, Cawker City, KS 67430",
+"shootTime": "Afternoon"
+},
+{
+"id": "location5",
+"imageUrl": "https://www.roadsideamerica.com/attract/images/ks/KSCAWtwine2.jpg",
+"name": "The Well",
+"address": "719 Wisconsin St, Cawker City, KS 67430",
+"shootTime": "Morning"
+},
+{
+"id": "location6",
+"imageUrl": "https://www.roadsideamerica.com/attract/images/ks/KSCAWtwine2.jpg",
+"name": "Bastion",
+"address": "719 Wisconsin St, Cawker City, KS 67430",
+"shootTime": "After Dark"
+},
+{
+"id": "location7",
+"imageUrl": "https://www.roadsideamerica.com/attract/images/ks/KSCAWtwine2.jpg",
+"name": "Acme",
+"address": "719 Wisconsin St, Cawker City, KS 67430",
+"shootTime": "After Dark"
+},
+{
+"id": "location8",
+"imageUrl": "https://www.roadsideamerica.com/attract/images/ks/KSCAWtwine2.jpg",
+"name": "Graze",
+"address": "719 Wisconsin St, Cawker City, KS 67430",
+"shootTime": "Evening"
+}
+]
+}
