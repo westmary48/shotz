@@ -1,6 +1,6 @@
 
 
-const movieStringBuilder = (arrayOfLocation) => {
+const movieBuilder = (arrayOfLocation) => {
     let domString = '';
     arrayOfLocation.forEach((movie) => {
         domString += `
@@ -18,3 +18,17 @@ const movieStringBuilder = (arrayOfLocation) => {
 
     })
 }
+
+
+const initializeMovie = (movie) => {
+    loadPinsForBoard(movies)
+      .then(data => {
+        movieBuilder(data);
+        bindEvents();
+      })
+      .catch(error => {
+        console.error('error', error);
+      });
+  }
+  
+  export {initializeMovie};

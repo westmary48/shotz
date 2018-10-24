@@ -1,22 +1,33 @@
+import { loadLocations } from "../data/locationsData";
 
-const sortLocations = (e) => {
-    const shootTime = e.target.id;
-    if (shootTime === 'all') {
-        LocationBuilder(locations);
-    } else if (shootTime === 'Morning') {
-        const filteredMorning = locations.filter(x => x.shootTime === shootTime);
-        locationsBuilder(filteredMorning);
-    } else if (shootTime === 'Afternoon') {
-        const filteredAfternoon = locations.filter(x => x.shootTime === shootTime);
-        locationsBuilder(filteredAfternoon);
-    } else if (shootTime === 'Evening') {
-        const filteredEvening = locations.filter(x => x.shootTime === shootTime);
-        locationsBuilder(filteredEvening);
-    } else if (shootTime === 'After Dark') {
-        const filteredAfterDark = locations.filter(x => x.shootTime === shootTime);
-        locationsBuilder(filteredAfterDark);
-    }
-};
+// const sortLocations = (e) => {
+//     const shootTime = e.target.id;
+//     if (shootTime === 'all') {
+//         LocationBuilder(locations);
+//     } else if (shootTime === 'Morning') {
+//         const filteredMorning = locations.filter(x => x.shootTime === shootTime);
+//         locationsBuilder(filteredMorning);
+//     } else if (shootTime === 'Afternoon') {
+//         const filteredAfternoon = locations.filter(x => x.shootTime === shootTime);
+//         locationsBuilder(filteredAfternoon);
+//     } else if (shootTime === 'Evening') {
+//         const filteredEvening = locations.filter(x => x.shootTime === shootTime);
+//         locationsBuilder(filteredEvening);
+//     } else if (shootTime === 'After Dark') {
+//         const filteredAfterDark = locations.filter(x => x.shootTime === shootTime);
+//         locationsBuilder(filteredAfterDark);
+//     }
+// };
+
+
+const bindEvents = () => {
+    $('#user-boards').on('click', '.board-card', (e) => {
+      const clickedLocationId = $(e.target).closest('.board-card').attr('id');
+      $('#morning-button').hide();
+      $('#afternoon-button').show();
+      initialPinView(clickedLocationId);
+    })
+  }
 
 
 const locationBuilder = (arrayOfLocation) => {
@@ -33,7 +44,7 @@ const locationBuilder = (arrayOfLocation) => {
                 </p>
             </div>
             <div class="caption card-footer">
-            <div class="${shootTime}"></div>
+            <div class="${location.shootTime}"></div>
         </div>
         </div>`
     })
@@ -41,9 +52,9 @@ const locationBuilder = (arrayOfLocation) => {
     }
 
 
-    const initializeBoardView = () => {
-        loadBoards().then((boards) => {
-            writeBoards(boards);
+    const initializeLocations = () => {
+        loadLocations().then((locations) => {
+            locationBuilder();
             bindEvents();
         }).catch((error) => {
             console.error(error);
@@ -52,9 +63,11 @@ const locationBuilder = (arrayOfLocation) => {
 
     $.get('../db/locations.json')
     .done((data) => {
-        writeFishes(data.fishes);
-        applySale()
+        locationBuilder(data.locations);
     })
     .fail((error) => {
         console.error({ error });
     });
+
+
+    export {initializeLocations};

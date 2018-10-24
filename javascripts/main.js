@@ -1,7 +1,7 @@
-// import {initialize} from './components/locationComponent';
+import {initializeLocations} from './components/locationComponent';
 
-// const initializeApp = () => {
+const initializeApp = () => {
    
-// }
+}
 
-// initializeApp();
+initializeApp();
