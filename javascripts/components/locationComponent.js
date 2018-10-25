@@ -1,4 +1,5 @@
 import {loadLocations} from "../data/locationsData.js";
+import { loadMovies } from "../data/movieData.js";
 
 const sortLocations = (e) => {
     const shootTime = e.target.id;
@@ -59,6 +60,7 @@ const locationBuilder = (arrayOfLocation) => {
 
     const initializeLocations = () => {
         loadLocations().then((locations) => {
+            return loadMovies(locations);
             locationBuilder();
             bindEvents();
         }).catch((error) => {

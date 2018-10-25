@@ -12,3 +12,6 @@ const loadMovies = () => {
 }
 
 export{loadMovies};
+
+
+
