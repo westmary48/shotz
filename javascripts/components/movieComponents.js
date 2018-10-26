@@ -1,10 +1,21 @@
+import { loadMovies } from "../data/movieData.js";
 
 
-const movieStringBuilder = (arrayOfLocation) => {
+const bindEvents = () => {
+    $('#morning-button').click(() => {
+      $('#morning-page').hide();
+      $('#afternoon-page').show();
+      $('#evening-page').show();
+      $('#afterDark-page').show();
+
+    })
+  }
+
+const movieBuilder = (arrayOfLocation) => {
     let domString = '';
     arrayOfLocation.forEach((movie) => {
         domString += `
-        <div class="${movie.id} location card col-md-6 col-md-offset-3"> 
+        <div class="${movie.id} movie-card col-md-6 col-md-offset-3"> 
         <div class="thumbnail">
             <img src="${movie.imgURL}" alt="" width="40%">
             <div class="caption">
@@ -17,4 +28,23 @@ const movieStringBuilder = (arrayOfLocation) => {
         </div>`
 
     })
+
+    $('#morning-shoot').html(domString);
+    $('#afternnon-shoot').html(domString);
+    $('#evening-shoot').html(domString);
+    $('#dark-shoot').html(domString);
 }
+
+
+const initializeMovie = (movie) => {
+    loadPinsForBoard(movies)
+      .then(data => {
+        movieBuilder(data);
+        bindEvents();
+      })
+      .catch(error => {
+        console.error('error', error);
+      });
+  }
+  
+  export {initializeMovie};
