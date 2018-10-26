@@ -1,24 +1,24 @@
 import {loadLocations} from "../data/locationsData.js";
 import { loadMovies } from "../data/movieData.js";
 
-const sortLocations = (e) => {
-    const shootTime = e.target.id;
-    if (shootTime === 'all') {
-        LocationBuilder(locations);
-    } else if (shootTime === 'Morning') {
-        const filteredMorning = locations.filter(x => x.shootTime === shootTime);
-        locationsBuilder(filteredMorning);
-    } else if (shootTime === 'Afternoon') {
-        const filteredAfternoon = locations.filter(x => x.shootTime === shootTime);
-        locationsBuilder(filteredAfternoon);
-    } else if (shootTime === 'Evening') {
-        const filteredEvening = locations.filter(x => x.shootTime === shootTime);
-        locationsBuilder(filteredEvening);
-    } else if (shootTime === 'After Dark') {
-        const filteredAfterDark = locations.filter(x => x.shootTime === shootTime);
-        locationsBuilder(filteredAfterDark);
-    }
-};
+// const sortLocations = (e) => {
+//     const shootTime = e.target.id;
+//     if (shootTime === 'all') {
+//         LocationBuilder(locations);
+//     } else if (shootTime === 'Morning') {
+//         const filteredMorning = locations.filter(x => x.shootTime === shootTime);
+//         locationsBuilder(filteredMorning);
+//     } else if (shootTime === 'Afternoon') {
+//         const filteredAfternoon = locations.filter(x => x.shootTime === shootTime);
+//         locationsBuilder(filteredAfternoon);
+//     } else if (shootTime === 'Evening') {
+//         const filteredEvening = locations.filter(x => x.shootTime === shootTime);
+//         locationsBuilder(filteredEvening);
+//     } else if (shootTime === 'After Dark') {
+//         const filteredAfterDark = locations.filter(x => x.shootTime === shootTime);
+//         locationsBuilder(filteredAfterDark);
+//     }
+// };
 
 
 const bindEvents = () => {
@@ -28,7 +28,7 @@ const bindEvents = () => {
       $('#afternoon-page').show();
       $('#evening-page').show();
       $('#afterDark-page').show();
-      initialPinView(clickedLocationId);
+      initializeMovie(clickedLocationId);
     })
   }
 
