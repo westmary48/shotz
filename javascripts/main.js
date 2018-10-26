@@ -1,10 +1,10 @@
-import {initializeLocations} from './components/locationComponent.js'
-import {initializeMovie} from './components/movieComponents.js';
+// import {initializeLocations} from './components/locationComponent.js'
+// import {initializeMovie} from './components/movieComponents.js';
 
-const initializeApp = () => {
-    initializeLocations()
-    initializeMovie()
+// const initializeApp = () => {
+//     initializeLocations()
+//     initializeMovie()
    
-}
+// }
 
-initializeApp();
+// initializeApp();

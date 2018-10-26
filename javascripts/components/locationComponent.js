@@ -58,14 +58,24 @@ const locationBuilder = (arrayOfLocation) => {
     }
 
 
-    const initializeLocations = () => {
-        loadLocations().then((locations) => {
-            return loadMovies(locations);
-            locationBuilder();
-            bindEvents();
-        }).catch((error) => {
-            console.error(error);
-        })
-    }
+    // const initializeLocations = () => {
+    //     loadLocations().then((locations) => {
+    //         return loadMovies(locations);
+    //         locationBuilder();
+    //         bindEvents();
+    //     }).catch((error) => {
+    //         console.error(error);
+    //     })
+    // }
 
-    export {initializeLocations};
+    // export {initializeLocations};
+
+        $.get('../db/locations.json')
+        .done((data) => {
+            locationBuilder(data.locations);
+        })
+        .fail((error) => {
+            console.error({ error });
+        });
+        
+        
