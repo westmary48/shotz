@@ -12,18 +12,18 @@ import {locationBuilder} from "./locationComponent.js"
 //     })
 //   }
 
-const movieBuilder = (arrayOfLocation) => {
+const movieBuilder = (arrayOfMovie) => {
     let domString = '';
-    arrayOfLocation.forEach((movie) => {
+    arrayOfMovie.forEach((movie) => {
         domString += `
-        <div class="${movie.id} movie-card col-md-6 col-md-offset-3"> 
+        <div class="${movie.id} movie-card d-flex border-success mb-3 " style= "width: 18rem"> 
         <div class="thumbnail">
-            <div class ="${movie.name}">
+        <h3 clsss = "releaseDate">${movie.name}</h3>
             <div class="caption">
-            <h3 class = "${movie.genre}">
-            <h3 clss = "${movie.releasedate}">
-                <h3 id="thumbnail-label">${movie.description}</h3>
-                <p>$
+            <h5 clsss = "releaseDate">${movie.genre}</h5>
+            <h5 clsss = "releaseDate">${movie.releaseDate}</h5>
+                <h5 id="thumbnail-label">${movie.description}</h5>
+                <p>
                     <span class="address">${movie.locations}</span>
                 </p>
             </div>
@@ -49,3 +49,14 @@ const movieBuilder = (arrayOfLocation) => {
 //   }
   
 //   export {initializeMovie};
+
+$.get('../db/movie.json')
+.done((data) => {
+    movieBuilder(data.movies);
+})
+.fail((error) => {
+    console.error({ error });
+});
+
+
+export {movieBuilder};
