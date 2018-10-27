@@ -37,9 +37,9 @@ const locationBuilder = (arrayOfLocation) => {
     let domString = '';
     arrayOfLocation.forEach((location) => {
         domString += `
-        <div class="${location.id} location-card col-md-6 col-md-offset-3 border-primary"> 
+         <div class="${location.id} location-card border-success mb-3" style= "width: 18rem"> 
         <div class="thumbnail">
-            <img src="${location.locationImage}" alt="" width="40%">
+            <img src="${location.imageUrl}" alt="" width="40%">
             <div class="caption">
                 <h3 id="thumbnail-label">${location.name}</h3>
                 <p>$
@@ -51,11 +51,9 @@ const locationBuilder = (arrayOfLocation) => {
         </div>
         </div>`
     })
-    $('#morning-shoot').html(domString);
-    $('#afternnon-shoot').html(domString);
-    $('#evening-shoot').html(domString);
-    $('#dark-shoot').html(domString);
-    }
+    $('#shoot-times').html(domString);
+}
+
 
 
     // const initializeLocations = () => {
@@ -78,4 +76,6 @@ const locationBuilder = (arrayOfLocation) => {
             console.error({ error });
         });
         
+
+        export {locationBuilder};
         

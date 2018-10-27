@@ -3,14 +3,14 @@
 
 {
 "id": "location1",
-"imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSft_ZYxRvFrWZdiKhD7hjZK8iEBkOlTuAqbwiaSwMYPKPldNLh.jpg",
+"imageUrl": "https://www.nashvilledowntown.com/_files/images/barrys-boot-camp-front-desk.jpg",
 "name": "Barrys Bootcamp",
 "address": "308 11th Ave S, Nashville, TN 37203",
 "shootTime": "Afternoon"
 },
 {
 "id": "location2",
-"imageUrl": "http://media.bizj.us/view/img/3146571/attbuildingnsh*750xx1600-2133-0-0.jpg",
+"imageUrl": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/the-batman-building-nashville-l-o-c.jpg",
 "name": "Aspire Health",
 "address": "719 Wisconsin St, Cawker City, KS 67430",
 "shootTime": "Morning"
@@ -18,7 +18,7 @@
 {
 
 "id": "location3",
-"imageUrl": "https://static1.squarespace.com/static/554980e9e4b0278520c6c43c/t/569ff2f0fb36b1c936f3fab5/1453326179094/5th+%26+Taylor+dining+room+-+smaller+file.jpg?format=2500w.jpg",
+"imageUrl": "https://media.bizj.us/view/img/7722902/151104nmceo5thtaylor0499*1024xx1300-731-0-68.jpg",
 "name": "Fifth and Taylor",
 "address": "1411 5th Ave N, Nashville, TN 37208",
 "shootTime": "Evening"
@@ -54,7 +54,7 @@
 },
 {
 "id": "location8",
-"imageUrl": "hhttps://cdn.vox-cdn.com/thumbor/WigqcQ2kl8ehF1WeMcGFLNSUoa4=/0x93:960x813/1200x800/filters:focal(0x93:960x813)/cdn.vox-cdn.com/uploads/chorus_image/image/49362285/Graze_Nashville.0.0.jpg",
+"imageUrl": "https://cdn.vox-cdn.com/thumbor/WigqcQ2kl8ehF1WeMcGFLNSUoa4=/0x93:960x813/1200x800/filters:focal(0x93:960x813)/cdn.vox-cdn.com/uploads/chorus_image/image/49362285/Graze_Nashville.0.0.jpg",
 "name": "Graze",
 "address": "1888 Eastland Ave, Nashville, TN 37206",
 "shootTime": "Evening"
