@@ -37,7 +37,7 @@ const locationBuilder = (arrayOfLocation) => {
     let domString = '';
     arrayOfLocation.forEach((location) => {
         domString += `
-        <div class="${location.id} location-card col-md-6 col-md-offset-3"> 
+        <div class="${location.id} location-card col-md-6 col-md-offset-3 border-primary"> 
         <div class="thumbnail">
             <img src="${location.locationImage}" alt="" width="40%">
             <div class="caption">
@@ -58,14 +58,24 @@ const locationBuilder = (arrayOfLocation) => {
     }
 
 
-    const initializeLocations = () => {
-        loadLocations().then((locations) => {
-            return loadMovies(locations);
-            locationBuilder();
-            bindEvents();
-        }).catch((error) => {
-            console.error(error);
-        })
-    }
+    // const initializeLocations = () => {
+    //     loadLocations().then((locations) => {
+    //         return loadMovies(locations);
+    //         locationBuilder();
+    //         bindEvents();
+    //     }).catch((error) => {
+    //         console.error(error);
+    //     })
+    // }
 
-    export {initializeLocations};
+    // export {initializeLocations};
+
+        $.get('../db/locations.json')
+        .done((data) => {
+            locationBuilder(data.locations);
+        })
+        .fail((error) => {
+            console.error({ error });
+        });
+        
+        
