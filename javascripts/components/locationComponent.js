@@ -37,7 +37,7 @@ const locationBuilder = (arrayOfLocation) => {
     let domString = '';
     arrayOfLocation.forEach((location) => {
         domString += `
-        <div class="${location.id} location-card col-md-6 col-md-offset-3"> 
+        <div class="${location.id} location-card col-md-6 col-md-offset-3 border-primary"> 
         <div class="thumbnail">
             <img src="${location.locationImage}" alt="" width="40%">
             <div class="caption">
