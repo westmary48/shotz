@@ -49,6 +49,7 @@ const locationBuilder = (arrayOfLocation) => {
             <div class="caption card-footer">
             <div class="${location.shootTime}"></div>
         </div>
+        </div>
         </div>`
     })
     $('#shoot-times').html(domString);
