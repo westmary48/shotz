@@ -31,7 +31,7 @@
 
   {
     "id": "movie4",
-    "name": "American Pie",
+    "name": "Finding Nemo",
     "genre": "Comedy",
     "releaseDate": "10/14/2020",
     "description": "super exclusive can't tell you",
@@ -65,7 +65,7 @@
   {
     "id": "movie8",
     "name": "Hocus Pocas",
-    "genre": "Thriller",
+    "genre": "Family",
     "releaseDate": "10/16/2020",
     "description": "super exclusive can't tell you",
     "locations": "location9"

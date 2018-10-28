@@ -20,25 +20,34 @@ import { loadMovies } from "../data/movieData.js";
 //     }
 // };
 
+$(document).ready(function(){
+    $("#search-bar").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $(".location-container #location-card").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+    });
+  });
 
-const bindEvents = () => {
-    $('#morning-shoot').on('click', '.', (e) => {
-      const clickedLocationId = $(e.target).closest('.location-card').attr('id');
-      $('#morning-page').hide();
-      $('#afternoon-page').show();
-      $('#evening-page').show();
-      $('#afterDark-page').show();
-      initializeMovie(clickedLocationId);
-    })
-  }
+
+// const bindEvents = () => {
+//     $('#morning-shoot').on('click', '.', (e) => {
+//       const clickedLocationId = $(e.target).closest('.location-card').attr('id');
+//       $('#morning-page').hide();
+//       $('#afternoon-page').show();
+//       $('#evening-page').show();
+//       $('#afterDark-page').show();
+//       initializeMovie(clickedLocationId);
+//     })
+//   }
 
 
 const locationBuilder = (arrayOfLocation) => {
     let domString = '';
     arrayOfLocation.forEach((location) => {
         domString += `
-         <div class="${location.id} location-card border-success mb-3" style= "width: 18rem"> 
-        <div class="thumbnail">
+         <div class="${location.id} location-container d-flex border-success mb-3" style= "width: 18rem"> 
+        <div class="thumbnail" id="location-card">
             <img src="${location.imageUrl}" alt="" width="40%">
             <div class="caption">
                 <h3 id="thumbnail-label">${location.name}</h3>
@@ -48,6 +57,7 @@ const locationBuilder = (arrayOfLocation) => {
             </div>
             <div class="caption card-footer">
             <div class="${location.shootTime}"></div>
+        </div>
         </div>
         </div>`
     })
