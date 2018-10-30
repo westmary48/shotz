@@ -18,7 +18,23 @@ import { loadMovies } from "../data/movieData.js";
 //         const filteredAfterDark = locations.filter(x => x.shootTime === shootTime);
 //         locationsBuilder(filteredAfterDark);
 //     }
-// };
+// // };
+// $('#afternoon-button').click(function(){
+    // $( document ).ready(function() {
+    //     $('#morning-button').on('click', function() { $("#morning-page").show(); });
+    //     $('#afternoon-button').on('click', function() { $("#afternoon-page").hide(); });
+    //     $('#evening-button').on('click', function() { $("#evening-page").hide(); });
+    //     $('#dark-button').on('click', function() { $("#afterDark-page").hide(); });
+    });
+// $('#morning-button').click(function(){
+// });
+// $('#evening-button').click(function(){
+// });
+// $('#dark-button').click(function(){
+// });
+
+
+
 
 $(document).ready(function(){
     $("#search-bar").on("keyup", function() {

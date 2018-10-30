@@ -12,6 +12,15 @@ import { locationBuilder } from "./locationComponent.js"
 //     })
 //   }
 
+$('#afternoon-button').click(function(){
+});
+$('#morning-button').click(function(){
+});
+$('#evening-button').click(function(){
+});
+$('#dark-button').click(function(){
+});
+
 $(document).ready(function () {
     $("#search-bar").on("keyup", function () {
         var value = $(this).val().toLowerCase();
